@@ -1,4 +1,4 @@
-# Writeups
+# CyberSecurity Writeups
 
 This project contains all my CyberSecurity writeups (documentation of my process through hacking challenges.)
 ## [Ctf](/ctf/)
