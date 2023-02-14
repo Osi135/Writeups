@@ -3,12 +3,14 @@
 ### Notes
 For all the challenges, I am using Windows subsystem for linux (wsl). A program that lets you use the linux operating system on your windows machine. So some of these solutions - especialy those involving the terminal - may only work on a linux os.
 
+
 ## [Obedient Cat](https://play.picoctf.org/practice/challenge/147?category=5&page=1)
-### How to solve
+### Solution
 In the challenge you are give a file to dowload. You simply have to open that file in a text editor.
 
+
 ## [Python Wrangling](https://play.picoctf.org/practice/challenge/166?category=5&page=1)
-### How to solve
+### Solution
 1. Prerequisite: Have python dowloaded.
 2. Dowload the files to one folder.
 3. In a terminal in that folder, run:
@@ -35,8 +37,9 @@ Opening the ende.py file, it contains about 60 lines of code. It contains Some s
 
 We can se that by using the `-d` flag to the command, we use decoding mode. And by either entering the password in the pw.txt file when asked to enter the password, or entering it behind the name of the encoded file, the code will return the decoded flag.
 
+
 ## [Wave a flag](https://play.picoctf.org/practice/challenge/170?category=5&page=1)
-### How to solve
+### Solution
 1. Dowload the file.
 3. In the terminal. run:
 `chmod +x warm`
