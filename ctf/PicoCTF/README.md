@@ -8,3 +8,4 @@ These are the categories I have Played:
 - [General](./General%20Skills.md)
 - [Web Exploitation](./Web%20Exploitation.md)
 - [Binary Exploitation](./Binary%20Exploitation.md)
+- [Forensics](Forensics.md)

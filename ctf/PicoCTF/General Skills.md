@@ -1,15 +1,19 @@
 # [General Skills](https://play.picoctf.org/practice?category=5&page=1)
 
 ### Notes
-For all the challenges, I am using Windows subsystem for linux (wsl). A program that lets you use the linux operating system on your windows machine. So some of these solutions - especialy those involving the terminal - may only work on a linux os.
+For all the challenges, when I am using the terminal, I am using Windows subsystem for linux (wsl). A program that lets you use the linux operating system on your windows machine. So some of these solutions - especialy those involving the terminal - may only work on a linux os.
 
 
 ## [Obedient Cat](https://play.picoctf.org/practice/challenge/147?category=5&page=1)
+### Description
+This file has a flag in plain sight (aka "in-the-clear"). Download flag.
 ### Solution
 In the challenge you are give a file to dowload. You simply have to open that file in a text editor.
 
 
 ## [Python Wrangling](https://play.picoctf.org/practice/challenge/166?category=5&page=1)
+### Description
+Python scripts are invoked kind of like programs in the Terminal... Can you run this Python script using this password to get the flag?
 ### Solution
 1. Prerequisite: Have python dowloaded.
 2. Dowload the files to one folder.
@@ -39,6 +43,8 @@ We can se that by using the `-d` flag to the command, we use decoding mode. And 
 
 
 ## [Wave a flag](https://play.picoctf.org/practice/challenge/170?category=5&page=1)
+### Description
+Can you invoke help flags for a tool or binary? This program has extraordinarily helpful information...
 ### Solution
 1. Dowload the file.
 3. In the terminal. run:

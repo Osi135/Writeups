@@ -44,7 +44,14 @@ The .hidden file, can be found if you type `ls -a`
 
 ## Level 4
 ### Solution
-1. Type `cat ./-file07`
+1. Type `cat inhere/-file07`
 
 ### Explanation
 Just read all files until you find the correct one.
+
+## Level 5
+### Solution
+1. Type `cat inhere/maybehere07/.file2`
+
+### Explanation
+Here there are to manny files to read all of them. Luckily, the "Level Goal"-text gives us a good hint. The correct file is 1033 bytes in size. By using this command `du -a -b inhere/`, we can se the size of all the files. "du" looks at file size, "-a" includes all the files, even inside directorys, "-b" gives us the filesize in bytes and "inhere/" just directs the command to execute in the inhere/ directory. We now get all list off all the files and directorys, with their respective size, and we can find the file with 1033 bytes in size.
