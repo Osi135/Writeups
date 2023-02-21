@@ -17,4 +17,4 @@ Over the wire is a website with hacking challenges. It has 16 different challeng
 
 ## Notes
 ### Fair play
-I want anyone who finds this document to use it to learn. But you wont learn if you are given the answers. So, for all the challenges that you can find permanently on the web and solve yourself, I have not provided the exact answer (The flag), because I don't want to ruin the fun for anyone. Th exeption is the timed one-of challenges i have participaded in. There I might add the exact answers.
+I want anyone who finds this document to use it to learn. But you wont learn if you are given the answers. So, for all the challenges that you can find permanently on the web and solve yourself, I have not provided the exact answer (The flag), because I don't want to ruin the fun for anyone. The exeption is the timed one-of challenges i have participaded in. There I might add the exact answers.
