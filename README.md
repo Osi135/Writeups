@@ -15,6 +15,9 @@ You can find my HTB profile here: [Osi135](https://app.hackthebox.com/users/1388
 ### [Over The Wire](/wargames/Over%20The%20Wire)
 Over the wire is a website with hacking challenges. It has 16 different challenges. Each challenge has a few dozen levels where each level contains the password to procede to the next level. Each level and each challenge is more difficult than the previous. It is therefor great for learning incrementally. 
 
+### [CyberDefenders](/wargames/Cyber%20Defenders)
+Cyber Defenders is a cybersecurity learning plattform that focuses on definsive cybersecurity, also called "blue teaming". 
+You can visit my profile here: [Osi135](https://cyberdefenders.org/Osi135)
 ## Notes
 ### Fair play
 I want anyone who finds this document to use it to learn. But you wont learn if you are given the answers. So, for all the challenges that you can find permanently on the web and solve yourself, I have not provided the exact answer (The flag), because I don't want to ruin the fun for anyone. The exeption is the timed one-of challenges i have participaded in. There I might add the exact answers.
