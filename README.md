@@ -2,9 +2,8 @@
 This project contains all my cybersecurity writeups (documentation of my process through hacking challenges.)
 
 ## ARE YOU HIERING FOR A SOC?
-I am currently applying for a job in a SOC. If you have come to this page from my application and are looking to evaluate my skills. Here are the writeups I have done, that are most relevant for a job in a SOC. They are forensics-style challenges that use a .pcapng file and Wireshark:
-- [Multiple incremental challenges](./wargames/Cyber%20Defenders/EscapeRoom.md)
-- [One challenge](./ctf/PicoCTF/Forensics.md)
+I am currently applying for a job in a SOC. If you have come to this page from my application and are looking to evaluate my skills, I recomend viewing this writup I recently finnished. They are forensics-style challenges that uses a .pcapng file and some log files. There are 17 challenges in total, and to solve the challenges, I used Wireshark, the linux terminal, decryption, reverse engineering and knowledge of BASH:
+- [SOC practice](./wargames/Cyber%20Defenders/EscapeRoom.md)
 
 ## [Ctf](/ctf/)
 Ctf's are competitive hacking chalenges, where the players tryes to find a flag (a string ph characters) in a digital system, using different tools and knowledge, depending on the challenge. To win a ctf, you copy and pasted the flag in to a field for submition.
