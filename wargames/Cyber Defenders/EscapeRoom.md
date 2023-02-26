@@ -95,3 +95,60 @@ What file has the script modified so the malware will start upon reboot?
 /etc/rc.local
 ### Explanation
 Again we will follow the TCP streams nr. 54, 55 and 56. Looking at all of them, we see that 54 and 55 contain a lot of encrypted information, while 56 contains some comandline comands. We can se that the commands Initialise BASH, then move "1" (the mallware file) to "var/mail/mail", then makes it executable and then extracts the content and puts it in to "/etc/rc.local"
+
+## Question 11
+### Question
+Where did the malware keep local files? 
+### Answer
+/var/mail/
+### Explanation
+We follow the TCP stream nr. 56. On the line 1 of the BASH scriptt, we se this command `mv 1 /var/mail/mail`. It takes the file "1", renames it to "mail" and moves it to "/var/mail/". We can se that the file is stored in "/var/mail/".
+
+## Question 12
+### Question
+What is missing from ps.log? 
+### Answer
+/var/mail/mail
+### Explanation
+We just saw that one of the mallicious files was located at "/var/mail/mail", but we don't see it show up in the ps.log.
+
+## Question 13
+### Question
+What is the main file that used to remove this information from ps.log? 
+### Answer
+sysmod.ko
+### Explanation
+We follow the TCP stream nr. 56. We have seen that file 1 was the main mallicious file. But there was another file that was uploaded. We asume that the other file is some sort of helper file. And here we guess that it helps by clearing the log. We can se on line 5 of the BASH script mv 2 `/lib/modules/`\``uname -r`\``/sysmod.ko` that the file is moved in to the file is moved to "/lib/modules/\`uname -r\`/", and is renamed "sysmod.ko"
+
+## Question 14
+### Question
+Inside the Main function, what is the function that causes requests to those servers? 
+### Answer
+requestFile
+### Explanation
+We now know that the file "1", is the main mallware file, so we look for the Main function inside that file (Which we have experted as an object) We can type `strings 1` we now get some lines of text, so we look through it to see if we find somthing interesting. We find the text "__libc_start_main@@GLIBC_2.2.5"
+We are now in the main function. reathing further, we se the name of multiple functions. We are looking for a "function that causes requests to those servers". `requestFile` seams like the right function.
+
+## Question 15
+### Question
+One of the IP's the malware contacted starts with 17. Provide the full IP. 
+### Answer
+174.129.57.253
+### Explanation
+We look at the same result we got from using `strings 1`. Scowering through the results, we find the only ip that starts with 17.
+
+## Question 16
+### Question
+How many files the malware requested from external servers?
+### Answer
+9
+### Explanation
+Click "File", "Export Objects", "HTTP...". Here we can see alle the HTTP objects. We can se that the ip adresses are the same as we saw together with 174.129.57.253. We can se that there are 12 object, but 3 of them, where the mallware that was implanted. The other 9 was requested.
+
+## Question 17
+### Question
+What are the commands that the malware was receiving from attacker servers? Format: comma-separated in alphabetical order
+### Answer
+NOP,RUN
+### Explanation
+To answer this question, we have to reverse enginer the mallware file "1". I use [IDA](https://hex-rays.com/ida-free/) to do that. In the code we find the function "processMessage()". Looking at that function we se that it has conditionals that compare the parameter to to hex values, "0x4e4f5000" and "0x52554a3a". By enterperating these values, f.eks using [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')&input=NGU0ZjUwMDA1MjU1NGUzYQ). We get the values "NOP" and "RUN".
