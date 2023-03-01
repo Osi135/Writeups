@@ -3,8 +3,9 @@ This project contains all my cybersecurity writeups (documentation of my process
 
 ## ARE YOU HIERING FOR A SOC?
 I am currently applying for a job in a SOC. If you have come to this page from my application and are looking to evaluate my skills, I recomend viewing these to documents. 
-The first one is a incident report of a IcedID malware attack. It is based on a .pcap file provided by a learning platform, with the purpose of practicing detecting cyberattacks and writing incident reports. View it [here](./Incident%20report/Malware-Traffic-Analysis/2022-03-21%20-%20TRAFFIC%20ANALYSIS%20EXERCISE%20-%20BURNINCANDLE.md)
-The other one is a forensics-style CTF that uses a .pcapng file and some log files. There are 17 challenges in total, and to solve the challenges, I used Wireshark, the linux terminal, decryption, reverse engineering and knowledge of BASH. View it [here](./wargames/Cyber%20Defenders/EscapeRoom.md)
+The first one is a incident report of a IcedID malware attack. It is based on a .pcap file provided by a learning platform, with the purpose of practicing detecting cyberattacks and writing incident reports. View it [here](./Incident%20report/Malware-Traffic-Analysis/2022-03-21%20-%20TRAFFIC%20ANALYSIS%20EXERCISE%20-%20BURNINCANDLE.md).
+
+The other one is a forensics-style CTF that uses a .pcapng file and some log files. There are 17 challenges in total, and to solve the challenges, I used Wireshark, the linux terminal, decryption, reverse engineering and knowledge of BASH. View it [here](./wargames/Cyber%20Defenders/EscapeRoom.md).
 
 
 ## [Ctf](/ctf/)
@@ -47,4 +48,5 @@ So my aproach to solving cybersecurity challenges is:
 2. Search up information that is related to my curent problem.
 3. Use a writeup as help.
 4. take notes of what I learned.
+
 At all of the fist 3 steps, if i make progress, I start at number 1 again.
