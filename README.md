@@ -1,13 +1,6 @@
 # Cyber Security Writeups
 This project contains all my cybersecurity writeups (documentation of my process through hacking challenges.)
 
-## ARE YOU HIERING FOR A POSITION IN IT USER SUPPORT?
-I am currently applying for a job in IT user support. If you have come to this page from my application and are looking to evaluate my skills, I recomend viewing this documents. 
-
-[Active Directory Basics](/ctf/TryHackMe/Active%20Directory%20Basics.md). It showcases my notes from the cources, as well as my aproach and solution to the tasks.
-
-
-
 ## [Ctf](/ctf/)
 Ctf's are competitive hacking chalenges, where the players tryes to find a flag (a string ph characters) in a digital system, using different tools and knowledge, depending on the challenge. To win a ctf, you copy and pasted the flag in to a field for submition.
 
